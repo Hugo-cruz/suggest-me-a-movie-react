@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 async function findMovieInfo(name) {
   const name_without_spaces = parseSpaces(name)
   console.log(`http://www.omdbapi.com/?apikey=a2c9d949&t=${name_without_spaces}`)
-  let response = await fetch(`http://www.omdbapi.com/?apikey=a2c9d949&t=${name_without_spaces}`);
+  let response = await fetch(`https://www.omdbapi.com/?apikey=a2c9d949&t=${name_without_spaces}`);
   return await response;
 }
 
